@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+    <head>
+        <title>不管你看没看过雪，我都想许你一场白色的浪漫~</title>
+        <meta charset="UTF-8">
+        <style type="text/css">
+            body{
+                margin:0;
+            }
+            header{
+                width:100%;
+                height:314px;
+                background:url("images/header-bg.png");
+            }
+            section{
+                position:relative;
+                width: 930px;
+                height:inherit;    
+                margin:auto;  
+                background :url("images/con-bg.png") no-repeat 0 204px,url("images/snow-bg.png");
+                 animation:auto 20s linear infinite;
+                 }
+                 @keyframes auto{
+                     from{background-position-y: 204px,0}
+                     to{background-position-y: 204px,800px}
+
+                 }
+                 @keyframes play{
+                     from{transform:translate(0,-350px);}
+                     to{transform:translate(0,0);}
+                 }
+                 .tree,.ice{
+                     position:absolute;
+                     animation:play 3s;
+                 }
+
+                 .tree{
+                  
+                     width:112px;
+                     height:137px;
+                     background:url("images/tree.png");
+                
+                 }
+                 .tree:nth-child(1){
+                     left:35px;
+                     top:169px;
+                     animation-duration:2s;
+                 }
+                 .tree:nth-child(2){
+                     left:200px;
+                     top:180px;
+                     animation-duration:1.5s;
+                 }
+                 .tree:nth-child(3){
+                     left:350px;
+                     top:125px;animation-duration:2.1s;
+                 }
+                 .tree:nth-child(4){
+                     left:515px;
+                     top:150px;
+                     animation-duration:2.2s;
+                 }
+                 .tree:nth-child(5){
+                     left:680px;
+                     top:170px;
+                     animation-duration:1.8s;
+                 }
+                 .tree:nth-child(6){
+                     left:680px;
+                     top:170px;
+                     animation-duration:1.9s;
+                 }
+                
+                 .ice{
+                     width:115px;
+                     height:103px;
+                     left:410px;
+                     top:210px;
+                     background:url("images/ice.png");
+                     animation-duration:1.7s;
+                 }
+        </style>
+    </head>
+    <body>
+        <header>
+            <section>
+                <div class="tree"></div>
+                <div class="tree"></div>
+                <div class="tree"></div>
+                <div class="tree"></div>
+                <div class="tree"></div>
+                <div class="tree"></div>
+                <div class="ice"></div>
+
+            </section>
+
+        </header>
+
+    </body>
+
+        
+    </body>
+</html>
